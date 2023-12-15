@@ -1,0 +1,88 @@
+/* Стили для модального окна обратная связь на главном банере */
+
+.modalCallBack {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 288px;
+  height: 400px;
+  background-color: #f1efef;
+  z-index: 2;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.modalCallBack-content {
+  background-color: #f1efef;
+  padding: 20px;
+  border-radius: 16px;
+  overflow-y: auto;
+  justify-content: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal.active {
+  display: none;
+}
+
+/* Стили модального окна мобильного меню (бургер меню)  */
+
+/* Стили для модального окна */
+.burger-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.bg-modal-content {
+  background-color: #fff;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Стили для кнопки закрытия */
+.close {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Стили для списка внутри модального окна */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Стили для ссылок внутри списка */
+ul a:hover {
+  text-decoration: underline;
+}
